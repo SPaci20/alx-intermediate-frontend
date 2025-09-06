@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Grid Layout</title>
+    <!-- Use Tailwind CSS via CDN for this single-file example -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="mb-6">
+        <h1 class="text-3xl font-bold text-center text-gray-800">Complex Grid Layout with Nested Grids</h1>
+    </header>
+
+    <main class="grid grid-cols-2 gap-4">
+        <!-- Grid Cell 1: Nested Blue Grid -->
+        <div class="grid grid-cols-2 p-4 gap-2 bg-blue-200 rounded-lg shadow-md">
+            <!-- Nested Cell 1 -->
+            <div class="bg-blue-400 p-2 rounded-md text-white font-semibold">Nested 1</div>
+            <!-- Nested Cell 2 -->
+            <div class="bg-blue-500 p-2 rounded-md text-white font-semibold">Nested 2</div>
+        </div>
+
+        <!-- Grid Cell 2: Nested Red Grid -->
+        <div class="grid grid-cols-2 p-4 gap-2 bg-red-200 rounded-lg shadow-md">
+            <!-- Nested Cell 3 -->
+            <div class="bg-red-400 p-2 rounded-md text-white font-semibold">Nested 3</div>
+            <!-- Nested Cell 4 -->
+            <div class="bg-red-500 p-2 rounded-md text-white font-semibold">Nested 4</div>
+        </div>
+
+        <!-- Grid Cell 3: Regular Content -->
+        <div class="bg-green-200 p-4 rounded-lg shadow-md text-gray-700 font-semibold flex items-center justify-center">Content 3</div>
+
+        <!-- Grid Cell 4: Regular Content -->
+        <div class="bg-yellow-200 p-4 rounded-lg shadow-md text-gray-700 font-semibold flex items-center justify-center">Content 4</div>
+    </main>
+</body>
+</html>
